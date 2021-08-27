@@ -4,12 +4,12 @@ const Nav = () => {
   const router = useRouter();
   return (
     <nav className='relative my-5'>
-      <div className='flex justify-evenly overflow-x-auto text-1xl whitespace-nowrap scrollbar-hide mx-3 space-x-10 sm:space-x-20'>
+      <div className='flex overflow-x-auto text-1xl whitespace-nowrap scrollbar-hide mx-3 space-x-5 sm:space-x-20 ml-10 pl-4'>
         {Object.keys(requests).map((key, i) => {
           const genreTitle = requests[key]['title'];
           return (
             <h2
-              className='first:pl-62 cursor-pointer 
+              className='cursor-pointer 
                   hover:text-white active:text-red-500 transition duration-100 transform hover:scale-125 last:pr-20'
               key={i}
               onClick={() => router.push(`/?genre=${key}`)}
