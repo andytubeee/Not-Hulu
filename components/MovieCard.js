@@ -18,7 +18,7 @@ export default function MovieCard({ movie }) {
       />
       <p className='mt-5 truncate max-w-md'>{movie.overview}</p>
       <h1 className='text-3xl mt-2 text-white font-bold group-hover:font-extrabold duration-200 transition-all'>
-        {movie.original_title}
+        {movie.original_title || movie.title || movie.original_name}
       </h1>
       <div className='opacity-0 group-hover:opacity-100 flex'>
         <span>{movie.release_date || movie.first_air_date}</span>
