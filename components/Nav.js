@@ -10,7 +10,7 @@ const Nav = () => {
           return (
             <h2
               className='cursor-pointer 
-                  hover:text-white active:text-red-500 transition duration-100 transform hover:scale-125 last:pr-20'
+                  hover:text-white active:text-[#38BDF8] transition duration-100 transform hover:scale-125 last:pr-20'
               key={i}
               onClick={() => router.push(`/?genre=${key}`)}
             >
