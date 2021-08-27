@@ -3,7 +3,7 @@ import { requests } from '../utils/requests';
 const Nav = () => {
   const router = useRouter();
   return (
-    <nav className='relative my-5'>
+    <nav className='relative my-5 self-center'>
       <div className='flex overflow-x-auto text-1xl whitespace-nowrap scrollbar-hide mx-3 space-x-5 sm:space-x-20 ml-10 pl-4'>
         {Object.keys(requests).map((key, i) => {
           const genreTitle = requests[key]['title'];
